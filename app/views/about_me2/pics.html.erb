@@ -1,0 +1,12 @@
+
+<%= image_tag('beach-at-night-wallpaper.jpg') %>  
+
+<hr/>
+
+<% @image_urls.each do |image_url| %>
+  
+  <a href="<%= image_url %>">
+    <%= image_tag(image_url) %>
+  </a>
+
+<% end %>
