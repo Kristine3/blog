@@ -8,7 +8,19 @@
 </head>
 <body>
 
+<% flash.each do |name, msg| %>
+	<%= content_tag :div, msg, class:name %>
+<% end %> 
+
 <%= yield %>
+
+<hr/>
+
+<% if @user_name != nil %>
+  Hello <%=@user_name.capitalize%>!
+<% end %>
+
+<hr/>
 
 </body>
 </html>

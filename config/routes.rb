@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
 
+  resources :tshirts
+
   root 'welcome#index'
+  
+  get 'portfolio' => 'about_me2#portfolio'
   
   get 'sitemap/index'
   get 'welcome' => 'welcome#index'
   
   get 'about_me2/pics' => 'about_me2#pics'
+  get 'about_me2' => 'about_me2#index'
+  
+  get 'about_me2/portfolio' => 'about_me2#portfolio'
+  
+  post 'set_name' => 'welcome#set_name'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

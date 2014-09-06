@@ -1,2 +1,36 @@
-<h1>AboutMe2#index</h1>
-<p>Find me in app/views/about_me2/index.html.erb</p>
+
+<head>
+  <style type="text/css">
+  
+    img { border-style: dotted; }
+	
+	p.description { color: red; }
+
+	p {	padding-top: 25px;
+		padding-bottom: 25px;
+		padding-left: 50px;
+		padding-right: 50px;}
+	
+	body {background-color: #8CE6Eb;}
+	
+  </style>
+</head>
+
+<p> First visit: <%= @first_visit %>
+
+<h1>Kristine Rooks</h1>
+
+<p>
+  Atlanta computer science teacher, knitter, swimmer, and horror enthusiast.
+</p>
+
+<p>
+  <img src="http://millardhawkpta.com/files/2013/08/Welcome_Friends.jpg"> 
+</p>
+
+<p class = "description">
+  <b>This is a perfect picture</b> 
+</p> 
+
+
+<%= @message %>
